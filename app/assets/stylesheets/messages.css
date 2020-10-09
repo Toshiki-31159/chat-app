@@ -53,76 +53,98 @@
   background-color: #ffffff;
 }
 
-.chat_header{
+.chat_header {
   height: 100px;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
 }
-.room_name{
+.room_name{ 
   color: #333;
   font-size: 24px;
   padding-top: 36px;
 }
-.chat_end{
-  color: darkred;
-  text-decoration: none;
-  border: 1px solid darkred;
-  padding: 20px;
-  margin: auto 0;
+.header-button {
+  margin-top: 40px;
 }
 
-.chat_center{
+.header-button a {
+  text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+}
+
+.messages{
   height: calc(100vh - 190px);
   background-color: #fafafa;
   padding: 46px 40px 0;
   overflow: scroll;
 }
 .message{
+  margin: 10px 0;
+}
+
+.upper-message{
   display: flex;
 }
-.message_name{
+
+.message-user {
+  color: #434a54;
   font-size: 16px;
-  color: #434a54;
-  margin: 10px;
 }
-.message_text{
-  font-size: 14px;
-  color: #434a54;
-  margin: 10px 10px 40px;
-}
-.message_day{
-  font-size: 12px;
+
+.message-date {
   color: #999;
-  margin: 10px;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.lower-message {
+  margin-top: 10px;
+}
+
+.message-content {
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 .chat_footer{
   height: 90px;
   background-color: #dddddd;
   padding: 20px 40px;
+}
+.form {
+  background-color: #DDDDDD;
+  height: 90px;
+  padding: 20px 40px;
   display: flex;
 }
-.form{
+
+.form-input {
   background-color: white;
-  width: 100%;
   display: flex;
+  width: 100%;
 }
-.form_message{
+
+.form-message {
+  border: none;
   height: 50px;
   width: 100%;
   padding-left: 10px;
-  border: none;
 }
-.form_submit{
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
   color: white;
-  background-color: #38aef0;
   font-size: 16px;
-  padding: 0 20px;
+  height: 50px;
   margin-left: 15px;
-  border: none;
+  padding: 0 20px;
 }
-.form_image{
+.form-image {
   font-size: 12px;
   background-color: lightblue;
   color: white;
@@ -131,6 +153,7 @@
   margin: 5px 10px;
   text-align: center;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
