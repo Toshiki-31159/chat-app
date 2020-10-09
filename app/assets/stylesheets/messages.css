@@ -23,7 +23,7 @@
   text-decoration: none;
   
 }
-.room_create{
+.room_create a{
   font-size: 10px;
   color: deepskyblue;
   border: 1px solid lightblue;
@@ -39,7 +39,7 @@
   overflow: scroll;
 }
 
-.room{
+.room a{
   color: white;
   padding: 20px 0 40px;
   text-decoration: none;
