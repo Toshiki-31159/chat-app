@@ -1,19 +1,12 @@
 <div class="chat_header">
-  <p class="room_name">テストルーム</p>
+  <div class="room_name">
+    <%= @room.name %>
+  </div>
   <a class="chat_end" href="#">チャットを終了する</a>
 </div>
 
-<div class="chat_center">
-  <div class="message">
-    <p class="message_name">魔法使い</p>
-    <p class="message_day">2020/10/07(wed) 18:40:55</p>
-  </div>
-  <p class="message_text">メラミ</p>
-  <div class="message">
-    <p class="message_name">スライム</p>
-    <p class="message_day">2020/10/07(wed) 18:40:55</p>
-  </div>
-  <p class="message_text">20のダメージ</p>
+<div class="messages">
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <div class="chat_footer">
